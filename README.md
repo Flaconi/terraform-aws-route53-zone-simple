@@ -37,6 +37,7 @@ The following resources _CAN_ be created:
 |------|-------------|------|---------|:-----:|
 | domain\_name | n/a | `string` | n/a | yes |
 | tags | n/a | `map` | `{}` | no |
+| vpc\_name | n/a | `string` | `""` | no |
 
 ## Outputs
 
