@@ -53,8 +53,8 @@ The following resources _CAN_ be created:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:-----:|
-| comment | n/a | `string` | `""` | no |
 | domain\_name | n/a | `string` | n/a | yes |
+| comment | n/a | `string` | `""` | no |
 | tags | n/a | `map` | `{}` | no |
 | vpc\_name | n/a | `string` | `""` | no |
 
