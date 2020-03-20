@@ -11,3 +11,8 @@ variable "tags" {
   type    = map
   default = {}
 }
+
+variable "comment" {
+  type    = string
+  default = ""
+}
