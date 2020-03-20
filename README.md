@@ -21,7 +21,7 @@ module "route53-zone-public" {
 }
 ```
 
-### Route53 private zone 
+### Route53 private zone
 
 ```hcl
 module "route53-zone-private" {
