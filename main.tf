@@ -10,5 +10,6 @@ resource "aws_route53_zone" "this" {
   vpc = {
     vpc_id = var.vpc_name != "" ? data.aws_vpc.selected.id : null
   }
-  tags = var.tags
+  tags    = var.tags
+  comment = var.comment
 }
