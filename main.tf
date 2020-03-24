@@ -7,9 +7,14 @@ data "aws_vpc" "selected" {
 
 resource "aws_route53_zone" "this" {
   name = var.domain_name
-  vpc {
-    vpc_id = var.vpc_name != "" ? data.aws_vpc.selected.id : null
+
+  dynamic "vpc" {
+    for_each = var.vpc_name != "" ? [data.aws_vpc.selected[0].id] : []
+    content {
+      vpc_id = vpc.value
+    }
   }
+
   tags    = var.tags
   comment = var.comment
 }
