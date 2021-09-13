@@ -1,6 +1,7 @@
 # Route53 Zone Simple Module
 
-[![Build Status](https://travis-ci.com/Flaconi/terraform-aws-route53-zone-simple.svg?branch=master)](https://travis-ci.com/Flaconi/terraform-aws-route53-zone-simple)
+[![Lint Status](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/linting.yml/badge.svg?branch=master)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/linting.yml)
+[![Docs Status](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/terraform-docs.yml/badge.svg?branch=master)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/terraform-docs.yml)
 [![Tag](https://img.shields.io/github/tag/Flaconi/terraform-aws-route53-zone-simple.svg)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
