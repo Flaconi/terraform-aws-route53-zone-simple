@@ -1,6 +1,7 @@
 # Route53 Zone Simple Module
 
-[![Build Status](https://travis-ci.com/Flaconi/terraform-aws-route53-zone-simple.svg?branch=master)](https://travis-ci.com/Flaconi/terraform-aws-route53-zone-simple)
+[![Lint Status](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/linting.yml/badge.svg?branch=master)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/linting.yml)
+[![Docs Status](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/terraform-docs.yml/badge.svg?branch=master)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/actions/workflows/terraform-docs.yml)
 [![Tag](https://img.shields.io/github/tag/Flaconi/terraform-aws-route53-zone-simple.svg)](https://github.com/Flaconi/terraform-aws-route53-zone-simple/releases)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -43,20 +44,27 @@ The following resources _CAN_ be created:
 - 1 aws_route53_zone
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12.26 |
+| aws | >= 3 |
+
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | n/a |
+| aws | >= 3 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
-| domain\_name | n/a | `string` | n/a | yes |
-| comment | n/a | `string` | `""` | no |
-| tags | n/a | `map` | `{}` | no |
-| vpc\_name | n/a | `string` | `""` | no |
+|------|-------------|------|---------|:--------:|
+| domain\_name | Domain name for route53 hosted zone | `string` | n/a | yes |
+| comment | Comment attached to hosted zone | `string` | `""` | no |
+| tags | Map of tags attached to hosted zone | `map(string)` | `{}` | no |
+| vpc\_name | VPC name for hosted zone attached it | `string` | `""` | no |
 
 ## Outputs
 

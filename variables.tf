@@ -1,18 +1,22 @@
 variable "domain_name" {
-  type = string
+  description = "Domain name for route53 hosted zone"
+  type        = string
 }
 
 variable "vpc_name" {
-  type    = string
-  default = ""
+  description = "VPC name for hosted zone attached it"
+  type        = string
+  default     = ""
 }
 
 variable "tags" {
-  type    = map
-  default = {}
+  description = "Map of tags attached to hosted zone"
+  type        = map(string)
+  default     = {}
 }
 
 variable "comment" {
-  type    = string
-  default = ""
+  description = "Comment attached to hosted zone"
+  type        = string
+  default     = ""
 }
