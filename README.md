@@ -48,30 +48,41 @@ The following resources _CAN_ be created:
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12.26 |
-| aws | >= 3 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.26 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 3 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_route53_zone.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_zone) | resource |
+| [aws_vpc.selected](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| domain\_name | Domain name for route53 hosted zone | `string` | n/a | yes |
-| comment | Comment attached to hosted zone | `string` | `""` | no |
-| tags | Map of tags attached to hosted zone | `map(string)` | `{}` | no |
-| vpc\_name | VPC name for hosted zone attached it | `string` | `""` | no |
+| <a name="input_domain_name"></a> [domain\_name](#input\_domain\_name) | Domain name for route53 hosted zone | `string` | n/a | yes |
+| <a name="input_comment"></a> [comment](#input\_comment) | Comment attached to hosted zone | `string` | `""` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Map of tags attached to hosted zone | `map(string)` | `{}` | no |
+| <a name="input_vpc_name"></a> [vpc\_name](#input\_vpc\_name) | VPC name for hosted zone attached it | `string` | `""` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| name\_servers | n/a |
-| zone\_id | n/a |
+| <a name="output_name_servers"></a> [name\_servers](#output\_name\_servers) | n/a |
+| <a name="output_zone_id"></a> [zone\_id](#output\_zone\_id) | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
